@@ -515,7 +515,7 @@ namespace TeslaLogger
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Logfile.Log("Mapquest Response: " + resultContent);
                 Logfile.ExceptionWriter(null, url + "\r\n\r\nResultContent:" + resultContent);

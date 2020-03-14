@@ -534,9 +534,6 @@ namespace TeslaLogger
 
         private void UpdateEfficiency()
         {
-            string eff = "0.190052356";
-            string car = "";
-
             if (carSettings.car_type == "model3")
             {
                 int maxRange = DBHelper.GetAvgMaxRage();
@@ -1611,7 +1608,6 @@ FROM
                 Logfile.ExceptionWriter(ex, resultContent);
                 return lastOdometerKM;
             }
-            return 0;
         }
 
         async Task<double?> GetOutsideTempAsync()
